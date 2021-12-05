@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pr3de/Documents/MASA/ECE475Project/ip_repo/RSA_1.0/hdl/modExp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'modExp'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pr3de/Documents/MASA/ECE475Project/ECE475Project.srcs/sim_1/new/modExpSim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'modExpSim'

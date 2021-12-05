@@ -1,0 +1,16 @@
+// Mem file initialization records.
+//
+// SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+// Vivado v2021.2 (64-bit)
+// Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+// Created on Monday November 29, 2021 - 12:30:12 am, from:
+//
+//     Map file     - c:\Users\pr3de\Documents\MASA\ECE475Project\ECE475Project.gen\sources_1\bd\TopLevel\TopLevel.bmm
+//     Data file(s) - c:/Users/pr3de/Documents/MASA/ECE475Project/ECE475Project.gen/sources_1/bd/TopLevel/ip/TopLevel_microblaze_0_0/data/mb_bootloop_le.elf
+//
+// Address space 'TopLevel_microblaze_0.TopLevel_microblaze_0_local_memory_lmb_bram_ADDR_SPACE', bit lane [31:0].
+//
+// Bus width = 32 bits, number of bus blocks = 1.
+
+@00000000
+    B8000000

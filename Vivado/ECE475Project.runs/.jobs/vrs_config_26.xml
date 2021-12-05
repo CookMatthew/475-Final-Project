@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="TopLevel_dlmb_v10_0_synth_1" LaunchDir="C:/Users/pr3de/Documents/MASA/ECE475Project/ECE475Project.runs/TopLevel_dlmb_v10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="TopLevel_axi_uartlite_0_0_synth_1" LaunchDir="C:/Users/pr3de/Documents/MASA/ECE475Project/ECE475Project.runs/TopLevel_axi_uartlite_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="TopLevel_ilmb_v10_0_synth_1" LaunchDir="C:/Users/pr3de/Documents/MASA/ECE475Project/ECE475Project.runs/TopLevel_ilmb_v10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="TopLevel_dlmb_v10_0_synth_1"/>
+	</Run>
+	<Run Id="TopLevel_clk_wiz_0_0_synth_1" LaunchDir="C:/Users/pr3de/Documents/MASA/ECE475Project/ECE475Project.runs/TopLevel_clk_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="TopLevel_microblaze_0_0_synth_1" LaunchDir="C:/Users/pr3de/Documents/MASA/ECE475Project/ECE475Project.runs/TopLevel_microblaze_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="TopLevel_rst_clk_wiz_0_100M_0_synth_1" LaunchDir="C:/Users/pr3de/Documents/MASA/ECE475Project/ECE475Project.runs/TopLevel_rst_clk_wiz_0_100M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="TopLevel_ilmb_bram_if_cntlr_0_synth_1" LaunchDir="C:/Users/pr3de/Documents/MASA/ECE475Project/ECE475Project.runs/TopLevel_ilmb_bram_if_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="TopLevel_dlmb_bram_if_cntlr_0_synth_1" LaunchDir="C:/Users/pr3de/Documents/MASA/ECE475Project/ECE475Project.runs/TopLevel_dlmb_bram_if_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="TopLevel_xbar_0_synth_1" LaunchDir="C:/Users/pr3de/Documents/MASA/ECE475Project/ECE475Project.runs/TopLevel_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/pr3de/Documents/MASA/ECE475Project/ECE475Project.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="TopLevel_dlmb_v10_0_synth_1"/>
+		<Parent Id="TopLevel_axi_uartlite_0_0_synth_1"/>
+		<Parent Id="TopLevel_ilmb_v10_0_synth_1"/>
+		<Parent Id="TopLevel_clk_wiz_0_0_synth_1"/>
+		<Parent Id="TopLevel_microblaze_0_0_synth_1"/>
+		<Parent Id="TopLevel_rst_clk_wiz_0_100M_0_synth_1"/>
+		<Parent Id="TopLevel_ilmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="TopLevel_dlmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="TopLevel_xbar_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="C:/Users/pr3de/Documents/MASA/ECE475Project/ECE475Project.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_1"/>
+		<Parent Id="TopLevel_dlmb_v10_0_synth_1"/>
+		<Parent Id="TopLevel_axi_uartlite_0_0_synth_1"/>
+		<Parent Id="TopLevel_ilmb_v10_0_synth_1"/>
+		<Parent Id="TopLevel_clk_wiz_0_0_synth_1"/>
+		<Parent Id="TopLevel_microblaze_0_0_synth_1"/>
+		<Parent Id="TopLevel_rst_clk_wiz_0_100M_0_synth_1"/>
+		<Parent Id="TopLevel_ilmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="TopLevel_dlmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="TopLevel_xbar_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

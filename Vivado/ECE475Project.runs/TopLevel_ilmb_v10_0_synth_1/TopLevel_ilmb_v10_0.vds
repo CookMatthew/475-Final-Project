@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Mon Nov 29 01:18:17 2021
+# Process ID: 15528
+# Current directory: C:/Users/pr3de/Documents/MASA/ECE475Project/ECE475Project.runs/TopLevel_ilmb_v10_0_synth_1
+# Command line: vivado.exe -log TopLevel_ilmb_v10_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TopLevel_ilmb_v10_0.tcl
+# Log file: C:/Users/pr3de/Documents/MASA/ECE475Project/ECE475Project.runs/TopLevel_ilmb_v10_0_synth_1/TopLevel_ilmb_v10_0.vds
+# Journal file: C:/Users/pr3de/Documents/MASA/ECE475Project/ECE475Project.runs/TopLevel_ilmb_v10_0_synth_1\vivado.jou
+# Running On: DESKTOP-196RP5R, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 4, Host memory: 16976 MB
+#-----------------------------------------------------------
+source TopLevel_ilmb_v10_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1360.141 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pr3de/Documents/MASA/ECE475Project/ip_repo/RSA_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pr3de/Documents/MASA/vivado-library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1360.141 ; gain = 0.000
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP TopLevel_ilmb_v10_0, cache-ID = 85ff139c960c34f6.
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 29 01:19:09 2021...

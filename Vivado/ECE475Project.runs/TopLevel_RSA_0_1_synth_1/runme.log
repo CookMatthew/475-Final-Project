@@ -1,0 +1,306 @@
+
+*** Running vivado
+    with args -log TopLevel_RSA_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TopLevel_RSA_0_1.tcl
+
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source TopLevel_RSA_0_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1338.238 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pr3de/Documents/MASA/ECE475Project/ip_repo/RSA_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pr3de/Documents/MASA/vivado-library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
+Command: synth_design -top TopLevel_RSA_0_1 -part xc7a35ticsg324-1L -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 22860
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1338.238 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TopLevel_RSA_0_1' [c:/Users/pr3de/Documents/MASA/ECE475Project/ECE475Project.gen/sources_1/bd/TopLevel/ip/TopLevel_RSA_0_1/synth/TopLevel_RSA_0_1.vhd:82]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'RSA_v1_0' declared at 'c:/Users/pr3de/Documents/MASA/ECE475Project/ECE475Project.gen/sources_1/bd/TopLevel/ipshared/0e33/hdl/RSA_v1_0.vhd:5' bound to instance 'U0' of component 'RSA_v1_0' [c:/Users/pr3de/Documents/MASA/ECE475Project/ECE475Project.gen/sources_1/bd/TopLevel/ip/TopLevel_RSA_0_1/synth/TopLevel_RSA_0_1.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'RSA_v1_0' [c:/Users/pr3de/Documents/MASA/ECE475Project/ECE475Project.gen/sources_1/bd/TopLevel/ipshared/0e33/hdl/RSA_v1_0.vhd:49]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'RSA_v1_0_S00_AXI' declared at 'c:/Users/pr3de/Documents/MASA/ECE475Project/ECE475Project.gen/sources_1/bd/TopLevel/ipshared/0e33/hdl/RSA_v1_0_S00_AXI.vhd:5' bound to instance 'RSA_v1_0_S00_AXI_inst' of component 'RSA_v1_0_S00_AXI' [c:/Users/pr3de/Documents/MASA/ECE475Project/ECE475Project.gen/sources_1/bd/TopLevel/ipshared/0e33/hdl/RSA_v1_0.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'RSA_v1_0_S00_AXI' [c:/Users/pr3de/Documents/MASA/ECE475Project/ECE475Project.gen/sources_1/bd/TopLevel/ipshared/0e33/hdl/RSA_v1_0_S00_AXI.vhd:86]
+INFO: [Synth 8-226] default block is never used [c:/Users/pr3de/Documents/MASA/ECE475Project/ECE475Project.gen/sources_1/bd/TopLevel/ipshared/0e33/hdl/RSA_v1_0_S00_AXI.vhd:237]
+INFO: [Synth 8-226] default block is never used [c:/Users/pr3de/Documents/MASA/ECE475Project/ECE475Project.gen/sources_1/bd/TopLevel/ipshared/0e33/hdl/RSA_v1_0_S00_AXI.vhd:367]
+INFO: [Synth 8-3491] module 'modExp' declared at 'c:/Users/pr3de/Documents/MASA/ECE475Project/ECE475Project.gen/sources_1/bd/TopLevel/ipshared/0e33/hdl/modExp.vhd:34' bound to instance 'modExp0' of component 'modExp' [c:/Users/pr3de/Documents/MASA/ECE475Project/ECE475Project.gen/sources_1/bd/TopLevel/ipshared/0e33/hdl/RSA_v1_0_S00_AXI.vhd:401]
+INFO: [Synth 8-638] synthesizing module 'modExp' [c:/Users/pr3de/Documents/MASA/ECE475Project/ECE475Project.gen/sources_1/bd/TopLevel/ipshared/0e33/hdl/modExp.vhd:43]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [c:/Users/pr3de/Documents/MASA/ECE475Project/ECE475Project.gen/sources_1/bd/TopLevel/ipshared/0e33/hdl/modExp.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'modExp' (1#1) [c:/Users/pr3de/Documents/MASA/ECE475Project/ECE475Project.gen/sources_1/bd/TopLevel/ipshared/0e33/hdl/modExp.vhd:43]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg2_reg was removed.  [c:/Users/pr3de/Documents/MASA/ECE475Project/ECE475Project.gen/sources_1/bd/TopLevel/ipshared/0e33/hdl/RSA_v1_0_S00_AXI.vhd:232]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [c:/Users/pr3de/Documents/MASA/ECE475Project/ECE475Project.gen/sources_1/bd/TopLevel/ipshared/0e33/hdl/RSA_v1_0_S00_AXI.vhd:233]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [c:/Users/pr3de/Documents/MASA/ECE475Project/ECE475Project.gen/sources_1/bd/TopLevel/ipshared/0e33/hdl/RSA_v1_0_S00_AXI.vhd:235]
+INFO: [Synth 8-256] done synthesizing module 'RSA_v1_0_S00_AXI' (2#1) [c:/Users/pr3de/Documents/MASA/ECE475Project/ECE475Project.gen/sources_1/bd/TopLevel/ipshared/0e33/hdl/RSA_v1_0_S00_AXI.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'RSA_v1_0' (3#1) [c:/Users/pr3de/Documents/MASA/ECE475Project/ECE475Project.gen/sources_1/bd/TopLevel/ipshared/0e33/hdl/RSA_v1_0.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'TopLevel_RSA_0_1' (4#1) [c:/Users/pr3de/Documents/MASA/ECE475Project/ECE475Project.gen/sources_1/bd/TopLevel/ip/TopLevel_RSA_0_1/synth/TopLevel_RSA_0_1.vhd:82]
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module RSA_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module RSA_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module RSA_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module RSA_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module RSA_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module RSA_v1_0_S00_AXI is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1338.238 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1338.238 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1338.238 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1338.238 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1357.656 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.092 . Memory (MB): peak = 1357.715 ; gain = 0.059
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:51 ; elapsed = 00:00:56 . Memory (MB): peak = 1357.715 ; gain = 19.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticsg324-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 1357.715 ; gain = 19.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 1357.715 ; gain = 19.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:53 ; elapsed = 00:00:58 . Memory (MB): peak = 1357.715 ; gain = 19.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 9     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Multipliers : 
+	              32x32  Multipliers := 2     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 4     
+	   5 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 5     
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP base1, operation Mode is: A*B.
+DSP Report: operator base1 is absorbed into DSP base1.
+DSP Report: operator base1 is absorbed into DSP base1.
+DSP Report: Generating DSP base1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator base1 is absorbed into DSP base1.
+DSP Report: operator base1 is absorbed into DSP base1.
+DSP Report: Generating DSP base1, operation Mode is: A*B.
+DSP Report: operator base1 is absorbed into DSP base1.
+DSP Report: operator base1 is absorbed into DSP base1.
+DSP Report: Generating DSP base1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator base1 is absorbed into DSP base1.
+DSP Report: operator base1 is absorbed into DSP base1.
+DSP Report: Generating DSP result1, operation Mode is: A*B.
+DSP Report: operator result1 is absorbed into DSP result1.
+DSP Report: operator result1 is absorbed into DSP result1.
+DSP Report: Generating DSP result1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result1 is absorbed into DSP result1.
+DSP Report: operator result1 is absorbed into DSP result1.
+DSP Report: Generating DSP result1, operation Mode is: A*B.
+DSP Report: operator result1 is absorbed into DSP result1.
+DSP Report: operator result1 is absorbed into DSP result1.
+DSP Report: Generating DSP result1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result1 is absorbed into DSP result1.
+DSP Report: operator result1 is absorbed into DSP result1.
+WARNING: [Synth 8-7129] Port s00_axi_awprot[2] in module TopLevel_RSA_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[1] in module TopLevel_RSA_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[0] in module TopLevel_RSA_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[2] in module TopLevel_RSA_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[1] in module TopLevel_RSA_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[0] in module TopLevel_RSA_0_1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:25 ; elapsed = 00:01:32 . Memory (MB): peak = 1357.715 ; gain = 19.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|modExp      | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|modExp      | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|modExp      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|modExp      | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|modExp      | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|modExp      | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|modExp      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|modExp      | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:02 ; elapsed = 00:02:11 . Memory (MB): peak = 1404.012 ; gain = 65.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:03 ; elapsed = 00:02:12 . Memory (MB): peak = 1407.297 ; gain = 69.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:07 ; elapsed = 00:02:16 . Memory (MB): peak = 1443.770 ; gain = 105.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:26 ; elapsed = 00:02:37 . Memory (MB): peak = 1458.617 ; gain = 120.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:26 ; elapsed = 00:02:37 . Memory (MB): peak = 1458.617 ; gain = 120.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:26 ; elapsed = 00:02:37 . Memory (MB): peak = 1458.617 ; gain = 120.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:26 ; elapsed = 00:02:37 . Memory (MB): peak = 1458.617 ; gain = 120.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:26 ; elapsed = 00:02:37 . Memory (MB): peak = 1458.617 ; gain = 120.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:26 ; elapsed = 00:02:37 . Memory (MB): peak = 1458.617 ; gain = 120.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |   466|
+|2     |DSP48E1 |     8|
+|5     |LUT1    |    38|
+|6     |LUT2    |   446|
+|7     |LUT3    |  1040|
+|8     |LUT4    |   754|
+|9     |LUT5    |   211|
+|10    |LUT6    |   611|
+|11    |FDRE    |   211|
+|12    |FDSE    |     4|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:26 ; elapsed = 00:02:37 . Memory (MB): peak = 1458.617 ; gain = 120.379
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:57 ; elapsed = 00:02:30 . Memory (MB): peak = 1458.617 ; gain = 100.902
+Synthesis Optimization Complete : Time (s): cpu = 00:02:27 ; elapsed = 00:02:37 . Memory (MB): peak = 1458.617 ; gain = 120.379
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.097 . Memory (MB): peak = 1470.621 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 474 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'TopLevel_RSA_0_1' is not ideal for floorplanning, since the cellview 'modExp' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1474.332 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: d526a40f
+INFO: [Common 17-83] Releasing license: Synthesis
+31 Infos, 18 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:38 ; elapsed = 00:02:51 . Memory (MB): peak = 1474.332 ; gain = 136.094
+INFO: [Common 17-1381] The checkpoint 'C:/Users/pr3de/Documents/MASA/ECE475Project/ECE475Project.runs/TopLevel_RSA_0_1_synth_1/TopLevel_RSA_0_1.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP TopLevel_RSA_0_1, cache-ID = b40ca062a3f88e1c
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/pr3de/Documents/MASA/ECE475Project/ECE475Project.runs/TopLevel_RSA_0_1_synth_1/TopLevel_RSA_0_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TopLevel_RSA_0_1_utilization_synth.rpt -pb TopLevel_RSA_0_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 29 00:33:34 2021...

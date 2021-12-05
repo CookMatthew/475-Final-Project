@@ -1,0 +1,10 @@
+verilog xil_defaultlib --include "../../../../ECE475Project.gen/sources_1/bd/TopLevel/ipshared/62b6" --include "../../../../ECE475Project.gen/sources_1/bd/TopLevel/ipshared/ec67/hdl" \
+"../../../bd/TopLevel/ip/TopLevel_clk_wiz_0_0/TopLevel_clk_wiz_0_0_clk_wiz.v" \
+"../../../bd/TopLevel/ip/TopLevel_clk_wiz_0_0/TopLevel_clk_wiz_0_0.v" \
+"../../../bd/TopLevel/ip/TopLevel_reset_inv_0_0/sim/TopLevel_reset_inv_0_0.v" \
+"../../../bd/TopLevel/ip/TopLevel_lmb_bram_0/sim/TopLevel_lmb_bram_0.v" \
+"../../../bd/TopLevel/ip/TopLevel_xbar_0/sim/TopLevel_xbar_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
